@@ -34,6 +34,6 @@ s_b = np.sqrt(v_b)
 t_b = params/s_b
 
 p_val = [2*(1-stats.t.cdf(np.abs(i),(len(new_x)-len(new_x[0])))) for i in t_b]
-p_val = np.round(p_val, 3)
+#p_val = np.round(p_val, 3)
 print(['season', 'yr', 'mnth', 'holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'atemp', 'hum', 'windspeed'])
 print('The p value of Linear Regression Model is ' + str(p_val))
